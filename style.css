@@ -1,0 +1,380 @@
+*, ::before, ::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face
+{
+    font-family: NewYork;
+    src: url(./fonts/NewYork\ PERSONAL\ USE.otf);
+}
+@font-face
+{
+    font-family: TT;
+    src: url(./fonts/TT\ Barrels\ Trial\ Regular.otf);
+}
+body
+{
+    display: grid;
+    grid-template-rows: 10rem 40rem 30rem 23rem;
+    height: 100vh;
+    background-color: white;
+    color: black;
+}
+.dark
+{
+    background-color: black;
+    color: white;
+}
+#btn1
+{
+    position: absolute;
+    left: 10px; top: 10px;
+    width: 50px; height: 50px;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    cursor: pointer;
+}
+#btn2
+{
+    position: absolute;
+    left: 60px; top: 10px;
+    width: 50px; height: 50px;
+    background: transparent;
+    border: none;
+    font-size:0;
+    cursor: pointer;
+}
+#btn1 > img
+{
+    width: 40px; height: 40px;
+}
+#btn2 > img
+{
+    width: 40px; height: 35px;
+}
+html
+{
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+header
+{
+    background: linear-gradient(90deg, rgba(252,247,252,1) 0%, rgba(228,214,225,1) 100%);
+    font-family: NewYork, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Monkeypc
+{
+    width: 30rem;
+    height: 40rem;
+}
+.imagemonkey
+{
+    position: relative; 
+    place-self: end;
+    top: -10px;
+}
+.links a
+{
+
+    margin-right: 50px;
+}
+a, a:visited
+{
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    color: #2e2a2ae3;
+    transition: 0.1s linear;
+    font-size: calc(0.8rem + 0.8vw);
+}
+a::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: hsla(27, 21%, 20%, 0.822);
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    transform-origin: left;
+}
+a:hover
+{
+    transform: scale(1.05);
+    color: #b19380e0;
+}
+a:hover::after
+{
+    animation: animLink 1.4s infinite ease-in-out;
+}
+@keyframes animLink
+{
+    50%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
+}
+section
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: black;
+    color: white;
+    font-family: TT, Arial, Helvetica, sans-serif;
+}
+.acceuil
+{
+    padding: 100px;
+}
+.name
+{
+    font-size: 50px;
+}
+.dev
+{
+    font-style: italic;
+    color: orange;
+}
+.globalpresent
+{
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(235, 213, 231, 0.732) 90%);
+}
+.presentation
+{
+    font-family: TT, Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+.hello
+{
+    font-family: NewYork, Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: rgb(204, 196, 201);
+    padding:  20px;
+}
+nav p
+{
+    color: rgb(179, 130, 146);
+    font-family: TT, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    padding: 20px;
+}
+i
+{
+    color: cadetblue;
+}
+fieldset
+{
+    background-color: rgb(51, 49, 49);
+}
+.competences
+{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    font-family: TT;
+}
+.comps, div
+{
+    margin-top: 10px;
+    font-size: 40px;
+    color: #f4feff;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+.comps .html {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comps .CSS {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comps .javascript {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comps .SQL {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.comps .html div {
+    border: 3px solid black;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.comps .CSS div {
+    border: 3px solid black;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.comps .javascript div {
+    border: 3px solid black;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.comps .SQL div {
+    border: 3px solid black;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+.html1, .html2, .html3, .html4
+{
+    animation: animColor 1.2s linear 1s infinite alternate;
+}
+.CSS1, .CSS2, .CSS3
+{
+    animation: animColor 1.2s linear 1s infinite alternate;
+}
+.javascript1, .javascript2
+{
+    animation: animColor 1.2s linear 1s infinite alternate;
+}
+.SQL1, .SQL2
+{
+    animation: animColor 1.2s linear 1s infinite alternate;
+}
+@keyframes animColor
+{
+    100%
+    {
+        background-color: rgb(172, 255, 47);
+    }
+    0%
+    {
+        background-color: rgba(172, 255, 47, 0);
+    }
+}
+footer
+{
+    margin: 50px 0 100px;
+}
+footer p
+{
+    text-align: center;
+    font-size: calc(1rem + 2vw);
+    margin: 25px 0;
+    color: rgb(179, 130, 146);
+    font-family: TT, Arial, Helvetica, sans-serif;
+}
+footer a
+{
+    font-family: "TT", serif;
+    color: #cc24a277;
+    font-size: calc(1rem + 2vw);
+}
+.img2
+{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1100px)
+{
+    .dev
+    {
+        font-size: 42px;
+    }
+    footer p
+    {
+        font-size: 3vw;
+    }
+    nav p
+    {
+        font-size: 3vw;
+    }
+}
+@media (max-width: 850px)
+{
+    section
+    {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .Monkeypc
+    {
+    width: 97.7vw;
+    height: 19rem;
+    }
+.imagemonkey
+    {
+    position: absolute; 
+    top: 490px;
+    left: -10px;
+    }
+    .comps .html div {
+    width: 70px;
+    height: 35px;
+}
+.comps .CSS div {
+    width: 70px;
+    height: 35px;
+}
+.comps .javascript div {
+    width: 70px;
+    height: 35px;
+}
+.comps .SQL div {
+    width: 70px;
+    height: 35px;
+}
+}
+@media (max-width: 600px)
+{
+    .links
+    {
+        margin: 100px;
+        margin-top: 150px;
+    }
+    .presentation
+    {
+    font-size: 30px;
+    padding: 30px;
+    }
+    .comps .html div {
+        width: 25px;
+        height: 25px;
+    }
+    .comps .CSS div {
+        width: 30px;
+        height: 25px;
+    }
+    .comps .javascript div {
+        width: 30px;
+        height: 25px;
+    }
+    .comps .SQL div {
+        width: 30px;
+        height: 25px;
+    }
+    .img2
+    {
+        height: 200px;
+    }
+    .competences
+    {
+        font-size: 4vw;
+    }
+}
