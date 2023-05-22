@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeux pierre papier ciseaux</title>
+    <link rel="stylesheet" href="stylepfc.css">
+    <script src="scriptpfc.js" defer></script>
+</head>
+<body>
+    <div class="score">
+        <p>Vous</p>
+        <p>Ordinateur</p>
+        <p id="score-joueur">0</p>
+        <p id="score-ordinateur">0</p>
+        <div id="reset">Recommencer</div>
+    </div>
+    <div class="action">
+        <p id="message">A vous de jouer !</p>
+        <div id="next">Tour suivant !</div>
+    </div>
+    <div class="jeu"></div>
+    <div class="choix">
+        <div class="button btn-joueur" id="pierre">
+            <img width="100" height="100" src="https://img.icons8.com/plasticine/100/rock.png" alt="rock"/>
+            <p>Pierre</p>
+        </div>
+        <div class="button btn-joueur" id="feuille">
+            <img width="100" height="100" src="https://img.icons8.com/external-objects-color-edt.graphics/75/external-Leaf-leaves-objects-color-edt.graphics-24.png" alt="external-Leaf-leaves-objects-color-edt.graphics-24"/>
+            <p>Feuille</p>
+        </div>
+        <div class="button btn-joueur" id="ciseaux">
+            <img width="100" height="100" src="https://img.icons8.com/color/96/scissors.png" alt="scissors"/>
+            <p>Ciseaux</p>
+        </div>
+    </div>
+    <div class="choix">
+        <div class="button btn-ordi" id="opierre">
+            <img width="100" height="100" src="https://img.icons8.com/plasticine/100/rock.png" alt="rock"/>
+            <p>Pierre</p>
+        </div>
+        <div class="button btn-ordi" id="ofeuille">
+            <img width="100" height="100" src="https://img.icons8.com/external-objects-color-edt.graphics/75/external-Leaf-leaves-objects-color-edt.graphics-24.png" alt="external-Leaf-leaves-objects-color-edt.graphics-24"/>
+            <p>Feuille</p>
+        </div>
+        <div class="button btn-ordi" id="ociseaux">
+            <img width="100" height="100" src="https://img.icons8.com/color/96/scissors.png" alt="scissors"/>
+            <p>Ciseaux</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

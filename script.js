@@ -2,11 +2,11 @@ const titre = document.querySelector(".dev");
 titre.style.position = "absolute";
 let topPos = 400;
 let dir = -1;
-let acceuilDiv = document.querySelector("#acceuil");
+let accueilDiv = document.querySelector("#sAccueil");
 let animationId = null;
 
 function hautBas() {
-    if (topPos == 450) {
+    if (topPos == 500) {
     dir = 1;
     } else if (topPos == 400) {
     dir = -1;
@@ -22,11 +22,11 @@ function stopAnimation() {
     titre.style.top = `${topPos}px`;
 }
 
-acceuilDiv.addEventListener('mouseenter', () => {
+accueilDiv.addEventListener('mouseenter', () => {
     animationId = requestAnimationFrame(hautBas);
 });
 
-acceuilDiv.addEventListener('mouseleave', stopAnimation);
+accueilDiv.addEventListener('mouseleave', stopAnimation);
 
 var btn1 = document.getElementById('btn1');
 var btn2 = document.getElementById('btn2');
