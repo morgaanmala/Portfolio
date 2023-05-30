@@ -202,8 +202,18 @@ fieldset
 {
     font-family: TT, Arial, Helvetica, sans-serif;
     font-size: calc(1rem + 2vw);
-    padding: 10px;
+    padding: 30px;
     text-align: center;
+}
+.linkProjets a
+{
+    display: flex;
+    justify-content: center;
+    color: pink;
+}
+.linkProjets a:after
+{
+    content: none;
 }
 footer
 {
