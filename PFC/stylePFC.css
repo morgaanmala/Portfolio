@@ -58,13 +58,6 @@ body {
 #next.active {
     visibility: visible;
 }
-.jeu{
-    border-top: 1px solid black;
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 200px;
-}
 .button{
     display: flex;
     align-items: center;
