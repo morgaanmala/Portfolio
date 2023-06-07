@@ -102,3 +102,12 @@ body {
 .choix {
     display: flex;
 }
+@media (max-width: 970px)
+{
+    .button{
+        display: block;
+        align-items: center;
+        font-size: 22px;
+        padding: var(--btn-padding);
+    }
+}

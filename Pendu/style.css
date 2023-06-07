@@ -18,7 +18,7 @@ body {
 
 #wrapper {
     display: flex;
-    width: 60vw;
+    width: 30vw;
     flex-direction: column;
 }
 
@@ -39,4 +39,10 @@ body {
 #answer {
     /* background: red; */
     font-size: 30px;
+}
+@media (max-width: 420px)
+{
+    #choices li, #answer li {
+        margin: 4px;
+    }
 }
